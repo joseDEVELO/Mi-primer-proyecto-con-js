@@ -1,0 +1,159 @@
+*, body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #36384D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carta{
+    width: 740px;
+    height: 515px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 20px;
+    gap: 20px;
+}
+.izquierda{
+    width: 50%;
+    height: 100%;
+}
+.presentacion h2{
+color: #222541;
+text-align: center;
+margin-top: 70px;
+font-size: 40px;
+}
+.presentacion p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.articulos img{
+    display: flex;
+   
+}
+.articulos p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 16px;
+    display: flex;
+    text-align: center;
+}
+.vineta::before{
+    content: url(/assets/images/icon-list.svg);
+    margin-right: 5px;
+    display: flex;
+}
+.email input{
+    width: 100%;
+    height: 45px;
+    margin-right: 10px;
+    padding-left: 10px;
+    margin-top: 18px;
+    border: 1px solid #000;
+    border-radius: 9px;
+    font-size: 16px;
+}
+.email button{
+    width: 100%;
+    height: 50px;
+    border-radius: 9px;
+    font-weight: 500;
+    background-color: #242843;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 18px;
+}
+.email h5{
+  margin-top: 20px;
+}
+.derecha{
+    width: 50%;
+    height: 100%;
+    background-image: url(/assets/images/illustration-sign-up-desktop.svg);
+    border-radius: 50px;
+}
+@media screen and (max-width:768px){
+    .carta{
+        width: 375px;
+        height: 90vh;
+        background-color: #fff;
+        flex-direction: column-reverse;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 0px;
+        gap: 0px;
+    }
+    .presentacion h2{
+        color: #222541;
+        text-align: left;
+        margin-top: 0px;
+        font-size: 40px;
+    }
+    .presentacion p{
+        text-align: left;
+        font-size: 16px;
+        margin-top: 35px;
+    }
+    .izquierda{
+        width: 100%;
+        background-color: #fff;
+        height: 66%;
+        border-radius: 0px;
+        padding: 20px;
+    }
+    .articulos p{
+        text-align: left;
+        font-size: 16px;
+        margin-top: 26px;
+        display: flex;
+    }
+    .vineta::before{
+        content: url(/assets/images/icon-list.svg);
+        margin-right: 15px;
+        display: flex;
+    }
+    .email input{
+        width: 100%;
+        height: 60px;
+        margin-right: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+        border: 1px solid #000;
+        border-radius: 9px;
+        font-size: 16px;
+    }
+    .email button{
+        width: 100%;
+        height: 60px;
+        border-radius: 9px;
+        font-weight: 500;
+        background-color: #242843;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        margin-top: 25px;
+    }
+    .email h5{
+      margin-top: 30px;
+    }
+    .derecha{
+        width: 100%;
+        height: 34%;
+        background-color: #fff;
+        background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        border-radius: 0px;
+}
+}
